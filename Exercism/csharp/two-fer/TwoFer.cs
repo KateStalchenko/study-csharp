@@ -2,10 +2,12 @@
 {
     public static string Name(string input = null)
     {
+        string text = "One for you, one for me.";
+
         if (input == null)
         {
-            return "One for you, one for me.";
+            return text;
         }
-        return $"One for {input}, one for me.";
+        return text.Replace("you", input);
     }
 }
