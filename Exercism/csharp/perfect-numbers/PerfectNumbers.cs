@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 public enum Classification
@@ -18,21 +17,23 @@ public static class PerfectNumbers
             throw new ArgumentOutOfRangeException();
         }
 
-        var factors = new List<int>();
-        for (var i = 1; i < int.MaxValue; i++)
-        {
-            if (i >= number)
-            {
-                break;
-            }
-
-            if (number % i == 0)
-            {
-                factors.Add(i);
-            }
-        }
+        var factors = Enumerable.Range(1, number - 1).Where(x => (number % x) == 0).ToList();
 
         var sum = factors.Sum();
-        return sum == number ? Classification.Perfect : sum > number ? Classification.Abundant : Classification.Deficient;
+
+        if (factors.Count() == 2 && factors.Contains(1))
+        {
+            return Classification.Deficient;
+        }
+
+        if (sum == number)
+        {
+            return Classification.Perfect;
+        }
+        if (sum > number)
+        {
+            return Classification.Abundant;
+        }
+        return Classification.Deficient;
     }
 }
