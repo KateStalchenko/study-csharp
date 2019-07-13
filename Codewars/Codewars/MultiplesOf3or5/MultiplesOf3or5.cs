@@ -6,9 +6,9 @@
 
 namespace Codewars.MultiplesOf3or5
 {
-    public static class Kata
+    public class Kata
     {
-        public static int Solution(int value)
+        public int Solution(int value)
         {
             var sumOfMultiples = 0;
             for (var i = 0; i < value; i++)

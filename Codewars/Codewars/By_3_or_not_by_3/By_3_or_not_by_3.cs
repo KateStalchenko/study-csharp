@@ -2,7 +2,7 @@
 {
     public class By3OrNotBy3
     {
-        public static bool DivisibleByThree(string n)
+        public bool DivisibleByThree(string n)
         {
             var quantity = 0;
             foreach (var nChar in n)

@@ -7,9 +7,9 @@
 
 namespace Codewars.SumOfInteger
 {
-    class SumOfInteger
+    public class SumOfInteger
     {
-        public static int[] TwoSum(int[] numbers, int target)
+        public int[] TwoSum(int[] numbers, int target)
         {
             var result = new int[2];
             for (var i = 0; i < numbers.Length; i++)

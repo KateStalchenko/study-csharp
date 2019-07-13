@@ -49,7 +49,6 @@
     <Compile Include="AltERnaTIngcAsE\AltERnaTIngcAsE.cs" />
     <Compile Include="BrokenMessage\BrokenMessage.cs" />
     <Compile Include="By_3_or_not_by_3\By_3_or_not_by_3.cs" />
-    <Compile Include="Codewars.cs" />
     <Compile Include="DecodeTheMorseCodePart1\DecodeTheMorseCodePart1.cs" />
     <Compile Include="FeastOfManyBeasts\FeastOfManyBeasts.cs" />
     <Compile Include="FindTheParityOutlier\FindTheParityOutlier.cs" />

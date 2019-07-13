@@ -11,7 +11,7 @@ namespace Codewars.SortTheOdd
 {
     class SortTheOdd
     {
-        public static int[] SortArray(int[] array)
+        public int[] SortArray(int[] array)
         {
             if (array.Length == 0)
             {

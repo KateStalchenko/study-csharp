@@ -22,7 +22,7 @@ namespace Codewars.DecodeTheMorseCodePart1
 {
     public class MorseCodeDecoder
     {
-        public static string Decode(string morseCode)
+        public string Decode(string morseCode)
         {
             const string wordSeparator = "   ";
             const string letterSeparator = " ";

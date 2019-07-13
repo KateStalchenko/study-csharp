@@ -5,7 +5,7 @@ namespace Codewars.ReplaceWithAlphabetPosition
 {
     public class ReplaceWithAlphabetPosition
     {
-        public static string AlphabetPosition(string text)
+        public string AlphabetPosition(string text)
         {
             const string letters = "abcdefghijklmnopqrstuvwxyz";
             var lettersOfAlphabet = letters.ToCharArray();

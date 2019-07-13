@@ -2,9 +2,9 @@
 
 namespace Codewars.RemoveStringSpaces
 {
-    internal class RemoveStringSpaces
+    public class RemoveStringSpaces
     {
-        public static string NoSpace(string input)
+        public string NoSpace(string input)
         {
             var newInput = input.Replace(" ", "");
             return newInput;

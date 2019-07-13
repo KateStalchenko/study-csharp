@@ -13,7 +13,7 @@ namespace Codewars.FindTheParityOutlier
 {
     public class Kata
     {
-        public static int Find(int[] integers)
+        public int Find(int[] integers)
         {
             var evenNumbers = new List<int>();
             var oddNumbers = new List<int>();
